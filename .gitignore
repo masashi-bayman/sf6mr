@@ -1,0 +1,16 @@
+# 認証情報（絶対にコミットしない）
+.env
+service_account.json
+data/session_state.json
+
+# 実行時データ
+data/
+*.sqlite
+*.db
+mr.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
