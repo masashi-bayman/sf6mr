@@ -1,0 +1,12 @@
+[Unit]
+Description=SF6 MR recorder
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=pi
+WorkingDirectory=/home/pi/sf6mr
+ExecStart=/home/pi/sf6mr/.venv/bin/python /home/pi/sf6mr/sf6mr.py run
+TimeoutStartSec=15min
+Nice=10
