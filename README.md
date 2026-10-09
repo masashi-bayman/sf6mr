@@ -9,7 +9,7 @@
 ## 1. Pi に設置
 
 ```bash
-cd ~ && unzip sf6mr.zip && cd sf6mr
+cd ~ && git clone https://github.com/masashi-bayman/sf6mr.git && cd sf6mr
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 .venv/bin/playwright install --with-deps chromium
